@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct BillModel {
+struct BillModel: Hashable {
     enum ImageData {
         case mobile
         case roaming

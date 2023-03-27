@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Swinject
 
 final class MainCoordinator: Coordinator {
     var navigationController: UINavigationController
@@ -15,8 +16,7 @@ final class MainCoordinator: Coordinator {
     }
     
     func start() {
-        let billService = BillService()
-        let interactor = BillsInteractor(service: billService)
+        let interactor = BillsInteractor(service: ServiceProvider.bill)
         let presenter = BillsPresenter(interactor: interactor, coordinator: self)
         let vc = BillsTableViewController(presenter: presenter)
         presenter.setViewInputDelegate(with: vc)
@@ -25,7 +25,6 @@ final class MainCoordinator: Coordinator {
 
     func pushToDetail() {
         // TODO: navigate to Detail Screen
-
     }
     
     func showAlert(with title: String = "",

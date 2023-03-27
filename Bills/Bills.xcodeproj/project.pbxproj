@@ -8,6 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		1494217829D179DB000B0E12 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1494217729D179DB000B0E12 /* Launch Screen.storyboard */; };
+		1494217A29D19237000B0E12 /* BillSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1494217929D19237000B0E12 /* BillSection.swift */; };
+		1494217C29D193F3000B0E12 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1494217B29D193F3000B0E12 /* Service.swift */; };
+		1494217E29D1940C000B0E12 /* DataFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1494217D29D1940C000B0E12 /* DataFetching.swift */; };
+		1494218029D19429000B0E12 /* Fetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1494217F29D19429000B0E12 /* Fetching.swift */; };
+		1494218229D19446000B0E12 /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1494218129D19446000B0E12 /* Parsing.swift */; };
+		1494218729D1951C000B0E12 /* DataFetcherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1494218629D1951C000B0E12 /* DataFetcherManager.swift */; };
+		1494218929D19531000B0E12 /* URLSessionNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1494218829D19531000B0E12 /* URLSessionNetworkManager.swift */; };
+		1494218B29D19586000B0E12 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1494218A29D19586000B0E12 /* CustomError.swift */; };
+		1494218E29D19609000B0E12 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 1494218D29D19609000B0E12 /* Swinject */; };
+		1494219029D1961F000B0E12 /* DataFetcherManagerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1494218F29D1961F000B0E12 /* DataFetcherManagerAssembly.swift */; };
+		1494219229D196AD000B0E12 /* DataFetcherManagerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1494219129D196AD000B0E12 /* DataFetcherManagerProvider.swift */; };
+		1494219429D196E6000B0E12 /* URLSessionNetworkManagerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1494219329D196E6000B0E12 /* URLSessionNetworkManagerAssembly.swift */; };
+		1494219929D197A9000B0E12 /* JsonDecoderParserAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1494219829D197A9000B0E12 /* JsonDecoderParserAssembly.swift */; };
+		1494219B29D197B4000B0E12 /* JsonDecoderParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1494219A29D197B4000B0E12 /* JsonDecoderParser.swift */; };
+		1494219E29D198B8000B0E12 /* BillServiceAssemby.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1494219D29D198B8000B0E12 /* BillServiceAssemby.swift */; };
+		149421A029D19C1F000B0E12 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1494219F29D19C1F000B0E12 /* ServiceProvider.swift */; };
 		D089F7A82980378200B026D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089F7A72980378200B026D2 /* AppDelegate.swift */; };
 		D089F7AA2980378200B026D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089F7A92980378200B026D2 /* SceneDelegate.swift */; };
 		D089F7B12980378300B026D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D089F7B02980378300B026D2 /* Assets.xcassets */; };
@@ -82,6 +98,21 @@
 
 /* Begin PBXFileReference section */
 		1494217729D179DB000B0E12 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		1494217929D19237000B0E12 /* BillSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillSection.swift; sourceTree = "<group>"; };
+		1494217B29D193F3000B0E12 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		1494217D29D1940C000B0E12 /* DataFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetching.swift; sourceTree = "<group>"; };
+		1494217F29D19429000B0E12 /* Fetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetching.swift; sourceTree = "<group>"; };
+		1494218129D19446000B0E12 /* Parsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
+		1494218629D1951C000B0E12 /* DataFetcherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcherManager.swift; sourceTree = "<group>"; };
+		1494218829D19531000B0E12 /* URLSessionNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkManager.swift; sourceTree = "<group>"; };
+		1494218A29D19586000B0E12 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		1494218F29D1961F000B0E12 /* DataFetcherManagerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcherManagerAssembly.swift; sourceTree = "<group>"; };
+		1494219129D196AD000B0E12 /* DataFetcherManagerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcherManagerProvider.swift; sourceTree = "<group>"; };
+		1494219329D196E6000B0E12 /* URLSessionNetworkManagerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkManagerAssembly.swift; sourceTree = "<group>"; };
+		1494219829D197A9000B0E12 /* JsonDecoderParserAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoderParserAssembly.swift; sourceTree = "<group>"; };
+		1494219A29D197B4000B0E12 /* JsonDecoderParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoderParser.swift; sourceTree = "<group>"; };
+		1494219D29D198B8000B0E12 /* BillServiceAssemby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillServiceAssemby.swift; sourceTree = "<group>"; };
+		1494219F29D19C1F000B0E12 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
 		D089F7A42980378200B026D2 /* Bills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D089F7A72980378200B026D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D089F7A92980378200B026D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +164,7 @@
 			files = (
 				D089F82E29803A8400B026D2 /* RxSwift in Frameworks */,
 				D089F82C29803A8400B026D2 /* RxRelay in Frameworks */,
+				1494218E29D19609000B0E12 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +185,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1494218529D19505000B0E12 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1494218629D1951C000B0E12 /* DataFetcherManager.swift */,
+				1494218829D19531000B0E12 /* URLSessionNetworkManager.swift */,
+				1494219329D196E6000B0E12 /* URLSessionNetworkManagerAssembly.swift */,
+				1494218F29D1961F000B0E12 /* DataFetcherManagerAssembly.swift */,
+				1494219129D196AD000B0E12 /* DataFetcherManagerProvider.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		1494219529D19782000B0E12 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				1494219829D197A9000B0E12 /* JsonDecoderParserAssembly.swift */,
+				1494219A29D197B4000B0E12 /* JsonDecoderParser.swift */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		1494219C29D1988A000B0E12 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				1494219D29D198B8000B0E12 /* BillServiceAssemby.swift */,
+				1494219F29D19C1F000B0E12 /* ServiceProvider.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
 		D089F79B2980378200B026D2 = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +239,7 @@
 		D089F7A62980378200B026D2 /* Bills */ = {
 			isa = PBXGroup;
 			children = (
+				1494219C29D1988A000B0E12 /* Assembly */,
 				D089F7D7298037A300B026D2 /* BundleFiles */,
 				D089F7D82980380100B026D2 /* SupportingFile */,
 				D089F8432980ECC800B026D2 /* Coordinator */,
@@ -230,6 +293,7 @@
 		D089F7E02980387000B026D2 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				1494219529D19782000B0E12 /* Json */,
 				D089F7E22980388300B026D2 /* Constants.swift */,
 				D089F7E12980388300B026D2 /* Environment.swift */,
 			);
@@ -250,6 +314,7 @@
 		D089F7EE298038C600B026D2 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				1494218529D19505000B0E12 /* Managers */,
 				D089F7EF2980392500B026D2 /* Router */,
 				D089F7F42980394000B026D2 /* Error */,
 			);
@@ -261,6 +326,11 @@
 			children = (
 				D089F7F12980393200B026D2 /* HTTPMethod.swift */,
 				D089F7F02980393200B026D2 /* Routing.swift */,
+				1494217B29D193F3000B0E12 /* Service.swift */,
+				1494217F29D19429000B0E12 /* Fetching.swift */,
+				1494218129D19446000B0E12 /* Parsing.swift */,
+				1494217D29D1940C000B0E12 /* DataFetching.swift */,
+				1494218A29D19586000B0E12 /* CustomError.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -297,6 +367,7 @@
 				D089F805298039A300B026D2 /* BillModel.swift */,
 				D089F806298039A300B026D2 /* MessageModel.swift */,
 				D089F83F2980479200B026D2 /* BillsPresenterBusinessRules.swift */,
+				1494217929D19237000B0E12 /* BillSection.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -421,6 +492,7 @@
 			packageProductDependencies = (
 				D089F82B29803A8400B026D2 /* RxRelay */,
 				D089F82D29803A8400B026D2 /* RxSwift */,
+				1494218D29D19609000B0E12 /* Swinject */,
 			);
 			productName = Bills;
 			productReference = D089F7A42980378200B026D2 /* Bills.app */;
@@ -499,6 +571,7 @@
 			mainGroup = D089F79B2980378200B026D2;
 			packageReferences = (
 				D089F82829803A8400B026D2 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				1494218C29D19609000B0E12 /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			productRefGroup = D089F7A52980378200B026D2 /* Products */;
 			projectDirPath = "";
@@ -549,23 +622,38 @@
 				D089F7F22980393200B026D2 /* Routing.swift in Sources */,
 				D089F7EB298038AE00B026D2 /* NumberFormatter+Extension.swift in Sources */,
 				D089F7EC298038AE00B026D2 /* Collection+Extension.swift in Sources */,
+				1494218729D1951C000B0E12 /* DataFetcherManager.swift in Sources */,
+				1494217C29D193F3000B0E12 /* Service.swift in Sources */,
 				D089F807298039A300B026D2 /* BillModel.swift in Sources */,
 				D089F7F32980393200B026D2 /* HTTPMethod.swift in Sources */,
+				1494219B29D197B4000B0E12 /* JsonDecoderParser.swift in Sources */,
+				1494219929D197A9000B0E12 /* JsonDecoderParserAssembly.swift in Sources */,
 				D089F808298039A300B026D2 /* MessageModel.swift in Sources */,
+				1494219229D196AD000B0E12 /* DataFetcherManagerProvider.swift in Sources */,
 				D089F810298039D200B026D2 /* InfoView.swift in Sources */,
 				D089F80B298039BF00B026D2 /* BillsTableViewController.swift in Sources */,
 				D089F814298039E700B026D2 /* BillTableViewCell.swift in Sources */,
 				D089F7E42980388300B026D2 /* Constants.swift in Sources */,
+				1494219029D1961F000B0E12 /* DataFetcherManagerAssembly.swift in Sources */,
 				D089F7FB2980395E00B026D2 /* BillResponse.swift in Sources */,
 				D089F7FC2980395E00B026D2 /* BillParameter.swift in Sources */,
+				1494217A29D19237000B0E12 /* BillSection.swift in Sources */,
+				1494218229D19446000B0E12 /* Parsing.swift in Sources */,
 				D089F7ED298038AE00B026D2 /* UIView+LoadNib.swift in Sources */,
 				D089F8402980479200B026D2 /* BillsPresenterBusinessRules.swift in Sources */,
 				D089F7E32980388300B026D2 /* Environment.swift in Sources */,
+				1494218929D19531000B0E12 /* URLSessionNetworkManager.swift in Sources */,
+				1494218029D19429000B0E12 /* Fetching.swift in Sources */,
+				1494219E29D198B8000B0E12 /* BillServiceAssemby.swift in Sources */,
+				1494217E29D1940C000B0E12 /* DataFetching.swift in Sources */,
 				D089F7A82980378200B026D2 /* AppDelegate.swift in Sources */,
 				D089F81B29803A0400B026D2 /* BillsInteractor.swift in Sources */,
 				D089F7F62980394800B026D2 /* NetworkError.swift in Sources */,
+				1494219429D196E6000B0E12 /* URLSessionNetworkManagerAssembly.swift in Sources */,
 				D0A621952981006600CA3A05 /* MainCoordinatorFactory.swift in Sources */,
 				D089F8462980F62700B026D2 /* Coordinator.swift in Sources */,
+				1494218B29D19586000B0E12 /* CustomError.swift in Sources */,
+				149421A029D19C1F000B0E12 /* ServiceProvider.swift in Sources */,
 				D089F8472980F62700B026D2 /* MainCoordinator.swift in Sources */,
 				D089F7EA298038AE00B026D2 /* String+Extension.swift in Sources */,
 				D089F7AA2980378200B026D2 /* SceneDelegate.swift in Sources */,
@@ -1171,6 +1259,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1494218C29D19609000B0E12 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		D089F82829803A8400B026D2 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -1182,6 +1278,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1494218D29D19609000B0E12 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1494218C29D19609000B0E12 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
 		D089F82B29803A8400B026D2 /* RxRelay */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D089F82829803A8400B026D2 /* XCRemoteSwiftPackageReference "RxSwift" */;
