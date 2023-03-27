@@ -33,6 +33,7 @@ final class BillsTableViewController: UITableViewController {
     private var heightForRowAt: CGFloat {
         return 60
     }
+    private var dataSource: UITableViewDiffableDataSource<BillSection, BillModel>?
     
     // MARK: - Init
     init(presenter: BillsPresenterProtocol) {
@@ -51,6 +52,7 @@ final class BillsTableViewController: UITableViewController {
         
         setupView()
         registerTableView()
+        setupDataSource()
         bind()
         presenter.onViewDidLoad()
     }
@@ -62,6 +64,27 @@ final class BillsTableViewController: UITableViewController {
         infoView.frame = view.bounds
         tableView.tableHeaderView = activityIndicator
         title = navigationTitle
+    }
+    
+    private func setupDataSource() {
+        dataSource = UITableViewDiffableDataSource(tableView: tableView, cellProvider: { [weak self ]tableView, indexPath, model -> UITableViewCell? in
+            guard let self = self,
+                  let cell = tableView.dequeueReusableCell(withIdentifier: self.reuseIdentifier, for: indexPath) as? BillTableViewCell,
+                  let billModel = self.presenter.models[safe: indexPath.row]
+            else {
+                return UITableViewCell()
+            }
+            cell.setup(with: billModel)
+            
+            return cell
+        })
+    }
+    
+    private func updateSnapshot() {
+        var snapshot = NSDiffableDataSourceSnapshot<BillSection, BillModel>()
+        snapshot.appendSections([.main])
+        snapshot.appendItems(presenter.models)
+        dataSource?.apply(snapshot, animatingDifferences: false)
     }
     
     private func setupIndicator() {
@@ -80,22 +103,7 @@ final class BillsTableViewController: UITableViewController {
         }.disposed(by: presenter.disposeBag)
     }
     
-    // MARK: - UITableViewDataSource and UITableViewDelegate
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        presenter.models.count
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as? BillTableViewCell,
-              let billModel = presenter.models[safe: indexPath.row]
-        else {
-            return UITableViewCell()
-        }
-        cell.setup(with: billModel)
-        
-        return cell
-    }
-
+    // MARK: - UITableViewDelegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter.showAlert()
     }
@@ -116,7 +124,7 @@ final class BillsTableViewController: UITableViewController {
 extension BillsTableViewController: BillsViewProtocol {
     func reloadTable() {
         infoView.isHidden = true
-        tableView.reloadData()
+        updateSnapshot()
     }
     
     func showEmptyView() {
